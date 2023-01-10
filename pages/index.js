@@ -21,7 +21,7 @@ export default index;
 // Executer le code coté serveur
 export const getStaticProps = async() => {
 
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=6');
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=12');
   const articles = await response.json();
 
   console.log(articles);

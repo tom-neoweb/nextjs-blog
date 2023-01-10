@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import Meta from '../../components/Meta';
 
 const article = ({ article }) => {
     return (
         <div className="article-page">
+            <Meta title={article.title}/>
             <h2>{article.title}</h2>
             <p>{article.body}</p>
             <Link href="/">Revenir à l'accueil</Link>
